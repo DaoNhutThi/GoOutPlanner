@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoOutPlanner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5210252e2a36c784a839329501113718cb5f3641")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48da18e751cea9a2b53561daa47a951e38dd6da8")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoOutPlanner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoOutPlanner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
