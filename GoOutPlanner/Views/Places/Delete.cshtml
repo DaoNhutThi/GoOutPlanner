@@ -1,0 +1,16 @@
+﻿@model GoOutPlanner.Models.Place
+
+<h2>Xóa địa điểm</h2>
+
+<h3>Bạn có chắc muốn xóa?</h3>
+
+<p>@Model.Name</p>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <button type="submit"
+            class="btn btn-danger">
+        Xóa
+    </button>
+</form>

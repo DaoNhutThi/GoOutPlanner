@@ -1,32 +1,124 @@
-using GoOutPlanner.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
+using Microsoft.EntityFrameworkCore;
+using GoOutPlanner.Models;
 
 namespace GoOutPlanner.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly AppDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(AppDbContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
-        public IActionResult Index()
+        // READ ALL
+        public async Task<IActionResult> Index()
+        {
+            var places = await _context.Places.ToListAsync();
+            return View(places);
+        }
+
+        // CREATE GET
+        public IActionResult Create()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        // CREATE POST
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(Place place)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                _context.Add(place);
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(place);
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        // EDIT GET
+        public async Task<IActionResult> Edit(int? id)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            if (id == null)
+                return NotFound();
+
+            var place = await _context.Places.FindAsync(id);
+
+            if (place == null)
+                return NotFound();
+
+            return View(place);
+        }
+
+        // EDIT POST
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, Place place)
+        {
+            if (id != place.Id)
+                return NotFound();
+
+            if (ModelState.IsValid)
+            {
+                _context.Update(place);
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(place);
+        }
+
+        // DELETE GET
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            var place = await _context.Places
+                .FirstOrDefaultAsync(x => x.Id == id);
+
+            if (place == null)
+                return NotFound();
+
+            return View(place);
+        }
+
+        // DELETE POST
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var place = await _context.Places.FindAsync(id);
+
+            if (place != null)
+            {
+                _context.Places.Remove(place);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        // DETAILS
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            var place = await _context.Places
+                .FirstOrDefaultAsync(x => x.Id == id);
+
+            if (place == null)
+                return NotFound();
+
+            return View(place);
         }
     }
 }

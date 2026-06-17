@@ -1,0 +1,20 @@
+﻿@model GoOutPlanner.Models.Place
+
+<h2>Thêm địa điểm</h2>
+
+<form asp-action="Create" method="post">
+
+    @Html.AntiForgeryToken()
+
+    <input asp-for="Name" class="form-control" placeholder="Tên" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+
+    <input asp-for="Category" class="form-control" placeholder="Loại" />
+    <input asp-for="Address" class="form-control" placeholder="Địa chỉ" />
+    <input asp-for="Note" class="form-control" placeholder="Ghi chú" />
+    <input asp-for="Rating" class="form-control" placeholder="Rating" />
+
+    <button type="submit" class="btn btn-success">
+        Lưu
+    </button>
+</form>

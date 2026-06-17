@@ -1,4 +1,4 @@
-namespace GoOutPlanner.Models
+﻿namespace GoOutPlanner.Models
 {
     public class ErrorViewModel
     {
