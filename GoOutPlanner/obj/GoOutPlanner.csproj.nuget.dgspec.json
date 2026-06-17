@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\study\\C#\\GoOutPlanner\\GoOutPlanner\\GoOutPlanner.csproj": {}
+    "D:\\study\\C#\\GoOutPlanner\\GoOutPlanner\\GoOutPlanner\\GoOutPlanner\\GoOutPlanner.csproj": {}
   },
   "projects": {
-    "D:\\study\\C#\\GoOutPlanner\\GoOutPlanner\\GoOutPlanner.csproj": {
+    "D:\\study\\C#\\GoOutPlanner\\GoOutPlanner\\GoOutPlanner\\GoOutPlanner\\GoOutPlanner.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\study\\C#\\GoOutPlanner\\GoOutPlanner\\GoOutPlanner.csproj",
+        "projectUniqueName": "D:\\study\\C#\\GoOutPlanner\\GoOutPlanner\\GoOutPlanner\\GoOutPlanner\\GoOutPlanner.csproj",
         "projectName": "GoOutPlanner",
-        "projectPath": "D:\\study\\C#\\GoOutPlanner\\GoOutPlanner\\GoOutPlanner.csproj",
+        "projectPath": "D:\\study\\C#\\GoOutPlanner\\GoOutPlanner\\GoOutPlanner\\GoOutPlanner\\GoOutPlanner.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\study\\C#\\GoOutPlanner\\GoOutPlanner\\obj\\",
+        "outputPath": "D:\\study\\C#\\GoOutPlanner\\GoOutPlanner\\GoOutPlanner\\GoOutPlanner\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
