@@ -1,45 +1,20 @@
-﻿@*
-    @model GoOutPlanner.Models.Place
-   
-For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@model GoOutPlanner.Models.Place
+﻿@model GoOutPlanner.Models.Place
 
-@{
+<h2>Thêm địa điểm</h2>
 
-    <h2>Thêm địa điểm</h2>
+<form asp-action="Create" method="post">
 
-    <form asp-action="Create">
+    @Html.AntiForgeryToken()
 
-        <div>
-            <label>Tên địa điểm</label>
-            <input asp-for="Name" class="form-control" />
-        </div>
+    <input asp-for="Name" class="form-control" placeholder="Tên" />
+    <span asp-validation-for="Name" class="text-danger"></span>
 
-        <div>
-            <label>Loại</label>
-            <input asp-for="Category" class="form-control" />
-        </div>
+    <input asp-for="Category" class="form-control" placeholder="Loại" />
+    <input asp-for="Address" class="form-control" placeholder="Địa chỉ" />
+    <input asp-for="Note" class="form-control" placeholder="Ghi chú" />
+    <input asp-for="Rating" class="form-control" placeholder="Rating" />
 
-        <div>
-            <label>Địa chỉ</label>
-            <input asp-for="Address" class="form-control" />
-        </div>
-
-        <div>
-            <label>Ghi chú</label>
-            <input asp-for="Note" class="form-control" />
-        </div>
-
-        <div>
-            <label>Đánh giá</label>
-            <input asp-for="Rating" class="form-control" />
-        </div>
-
-        <br />
-
-        <button type="submit" class="btn btn-success">
-            Lưu
-        </button>
-    </form>
-}
+    <button type="submit" class="btn btn-success">
+        Lưu
+    </button>
+</form>
