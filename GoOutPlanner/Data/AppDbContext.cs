@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using GoOutPlanner.Models;
+using Microsoft.EntityFrameworkCore;
 
 public class AppDbContext : DbContext
 {

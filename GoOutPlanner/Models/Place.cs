@@ -1,19 +1,21 @@
 ﻿using System.ComponentModel.DataAnnotations;
-
-public class Place
+namespace GoOutPlanner.Models
 {
-    public int Id { get; set; }
+    public class Place
+    {
+        public int Id { get; set; }
 
-    [Required]
-    public string Name { get; set; }
+        [Required]
+        public string Name { get; set; }
 
-    public string Category { get; set; }
+        public string Category { get; set; }
 
-    public string Address { get; set; }
+        public string Address { get; set; }
 
-    public string Note { get; set; }
+        public string Note { get; set; }
 
-    public int Rating { get; set; }
+        public int Rating { get; set; }
 
-    public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+    }
 }

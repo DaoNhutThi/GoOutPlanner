@@ -26,8 +26,32 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/study/C\#/GoOutPlanner/GoOutPlanner/GoOutPlanner/GoOutPlanner/Views/Home/Place.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQbGFjZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/study/C\#/GoOutPlanner/GoOutPlanner/GoOutPlanner/GoOutPlanner/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/study/C\#/GoOutPlanner/GoOutPlanner/GoOutPlanner/GoOutPlanner/Views/Places/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/study/C\#/GoOutPlanner/GoOutPlanner/GoOutPlanner/GoOutPlanner/Views/Places/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/study/C\#/GoOutPlanner/GoOutPlanner/GoOutPlanner/GoOutPlanner/Views/Places/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/study/C\#/GoOutPlanner/GoOutPlanner/GoOutPlanner/GoOutPlanner/Views/Places/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/study/C\#/GoOutPlanner/GoOutPlanner/GoOutPlanner/GoOutPlanner/Views/Places/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/study/C\#/GoOutPlanner/GoOutPlanner/GoOutPlanner/GoOutPlanner/Views/Shared/Error.cshtml]
